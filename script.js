@@ -21,4 +21,12 @@ const petTypes = ["dog", "cat", "dragon", "hamster"];
 const moods = ["happy", "sleepy", "excited", "grumpy"];
 const activities = ["flying", "playing", "napping", "running"];
 
+function render() {
+  ageText.textContent = petAge;
+  hungryText.textContent = isHungry ? "Hungry" : "Not hungry";
 
+  description.textContent =
+    "Meet " + petName + ", a " + petAge + " year old " + petType +
+    " who loves " + favoriteActivity +
+    " and is currently feeling " + mood + "!";
+}
