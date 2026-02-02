@@ -26,7 +26,13 @@ function render() {
   hungryText.textContent = isHungry ? "Hungry" : "Not hungry";
 
   description.textContent =
-    "Meet " + petName + ", a " + petAge + " year old " + petType +
+    "Meet " + petName + ", a " + petAge + "year old " + petType +
     " who loves " + favoriteActivity +
     " and is currently feeling " + mood + "!";
 }
+
+function randomPick(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+
