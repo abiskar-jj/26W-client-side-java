@@ -26,7 +26,7 @@ function render() {
   hungryText.textContent = isHungry ? "Hungry" : "Not hungry";
 
   description.textContent =
-    "Meet " + petName + ", a " + petAge + "year old " + petType +
+    "Meet " + petName + ", a " + petAge + "-year-old " + petType +
     " who loves " + favoriteActivity +
     " and is currently feeling " + mood + "!";
 }
@@ -35,4 +35,35 @@ function randomPick(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+randomBtn.addEventListener("click", () => {
+  petType = randomPick(petTypes);
+  mood = randomPick(moods);
+  favoriteActivity = randomPick(activities);
+  petAge = Math.floor(Math.random() * 11);
+  render();
+});
 
+ageUp.addEventListener("click", () => {
+    petAge = petAge + 1;
+    render();
+  });
+  
+  ageDown.addEventListener("click", () => {
+    petAge = petAge - 1;
+    if (petAge < 0) petAge = 0;
+    render();
+  });
+  
+  nameBtn.addEventListener("click", () => {
+    const newName = nameInput.value.trim();
+    if (newName !== "") {
+      petName = newName;
+      render();
+    }
+  });
+  
+  hungryCheck.addEventListener("change", () => {
+    isHungry = hungryCheck.checked;
+    render();
+  });
+  render();
