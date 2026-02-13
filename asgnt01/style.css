@@ -40,3 +40,23 @@ span {
     font-weight: bold;
     color: #333;
 }
+/* Arrange button and text side-by-side */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+
+/* Ensure text lines up nicely */
+span {
+    min-width: 200px;
+    text-align: left;
+}
+
+/* Final story output styling */
+#storyOutput {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #222;
+}
