@@ -7,3 +7,8 @@ const endings = ["and ran away.", "and saved the world!", "and exploded!", "and 
 
 // Index trackers
 let i1 = -1, i2 = -1, i3 = -1, i4 = -1, i5 = -1;
+
+// Function to cycle choices
+function next(arr, index) {
+    return (index + 1) % arr.length;
+}
