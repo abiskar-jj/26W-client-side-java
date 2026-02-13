@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Virtual Pet Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Virtual Pet Profile</h1>
+
+  <button id="randomBtn">Generate Random Pet</button>
+
+  <div class="box">
+    <p>
+      Pet Name:
+      <input id="nameInput" type="text" placeholder="Enter name">
+      <button id="nameBtn">Update Name</button>
+    </p>
+
+    <p>
+      Age: <span id="ageText">0</span>
+    </p>
+    <button id="ageUp">+ Age</button>
+    <button id="ageDown">- Age</button>
+
+    <p>
+      Hungry?
+      <input type="checkbox" id="hungryCheck">
+      <span id="hungryText">Not hungry</span>
+    </p>
+  </div>
+
+  <h2>Pet Description</h2>
+  <p id="description"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
