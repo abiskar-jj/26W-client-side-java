@@ -42,7 +42,6 @@ document.getElementById("btnEnding").onclick = function() {
     i5 = next(endings, i5);
     document.getElementById("choiceEnding").textContent = endings[i5];
 };
-
 // Build final story
 document.getElementById("showStory").onclick = function() {
 
