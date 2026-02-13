@@ -12,3 +12,33 @@ let i1 = -1, i2 = -1, i3 = -1, i4 = -1, i5 = -1;
 function next(arr, index) {
     return (index + 1) % arr.length;
 }
+
+// Character
+document.getElementById("btnCharacter").onclick = function() {
+    i1 = next(characters, i1);
+    document.getElementById("choiceCharacter").textContent = characters[i1];
+};
+
+// Place
+document.getElementById("btnPlace").onclick = function() {
+    i2 = next(places, i2);
+    document.getElementById("choicePlace").textContent = places[i2];
+};
+
+// Action
+document.getElementById("btnAction").onclick = function() {
+    i3 = next(actions, i3);
+    document.getElementById("choiceAction").textContent = actions[i3];
+};
+
+// Thing
+document.getElementById("btnThing").onclick = function() {
+    i4 = next(things, i4);
+    document.getElementById("choiceThing").textContent = things[i4];
+};
+
+// Ending
+document.getElementById("btnEnding").onclick = function() {
+    i5 = next(endings, i5);
+    document.getElementById("choiceEnding").textContent = endings[i5];
+};
