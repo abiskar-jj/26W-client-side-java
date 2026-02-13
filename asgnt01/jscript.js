@@ -42,3 +42,16 @@ document.getElementById("btnEnding").onclick = function() {
     i5 = next(endings, i5);
     document.getElementById("choiceEnding").textContent = endings[i5];
 };
+
+// Build final story
+document.getElementById("showStory").onclick = function() {
+
+    let story =
+        characters[i1] + " " +
+        places[i2] + " " +
+        actions[i3] + " " +
+        things[i4] + " " +
+        endings[i5];
+
+    document.getElementById("storyOutput").textContent = story;
+};
