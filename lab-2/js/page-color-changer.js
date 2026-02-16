@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     greenSlider.addEventListener("input", updateBackgroundColor);
     blueSlider.addEventListener("input", updateBackgroundColor);
   
+  // Set initial color when page loads
+  updateBackgroundColor();
 
 
 });
