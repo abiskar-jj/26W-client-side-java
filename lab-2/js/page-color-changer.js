@@ -19,6 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+    // Event listeners
+    redSlider.addEventListener("input", updateBackgroundColor);
+    greenSlider.addEventListener("input", updateBackgroundColor);
+    blueSlider.addEventListener("input", updateBackgroundColor);
+  
+
 
 });
 
